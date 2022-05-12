@@ -1,0 +1,40 @@
+<section class="login d-flex flex-column w-100 h-100">
+    <header class="login__topo mb-4">
+        <div class="login__logo">Your Logo</div>
+        <h1 class="login__title">Login</h1>
+    </header>
+
+    <form class="login__form w-100">
+        <label for="email" class="d-block mb-2 login__label-email">Email</label>
+        <input class=" border-0 login__email" id="email" type="email" placeholder="username@gmail.com">
+
+        <label for="password" class="d-block mb-2 mt-4 login__label-password">Password</label>
+        <div class="login__container bg-white d-flex ">
+            <input class="login__password border-0 d-inline-block " id="password" type="password" placeholder="password">
+            <i class="ml-3 d-flex">
+                <img class="login__view-password" src="../../../../assets/images/password_eye.svg" alt="imagem de olho para mostrar ou esconder senha">
+            </i>
+        </div>
+        <small class="d-block mt-4 login__forgot-password mb-5"> 
+            <a href="">Forgot password?</a> 
+        </small>
+
+        <button class="login__button btn">Sign in</button>
+
+        <small class="login__continue d-block text-center">or continue with</small>
+
+        <div class="login__social-media w-100 d-flex justify-content-between ">
+            <div class="login__account d-flex justify-content-center align-content-center">
+                <img src="../../../../assets/images/icon_google.svg" alt="icone do google">
+            </div>
+            <div class="login__account d-flex justify-content-center align-content-center">
+                <img src="../../../../assets/images/icon_github.svg" alt="icone do github">
+            </div>
+            <div class="login__account d-flex justify-content-center align-content-center">
+                <img src="../../../../assets/images/icon_facebook.svg" alt="icone do facebook">
+            </div>
+        </div>
+
+        <small class="login__noAccount d-block">Don't have an account? yet? <a class="text-center" routerLink="subscribe">Register for free</a></small>
+    </form>
+</section>

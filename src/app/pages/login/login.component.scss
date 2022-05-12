@@ -1,0 +1,35 @@
+@import '../../../assets/styles/scss/variables.scss';
+@import '../../../assets/styles/scss/mixins.scss';
+
+.login{
+    background-color: $primary-color;
+
+    .forms{
+        width: calculate-rem(641);
+        height: calculate-rem(835);
+        margin-left: calculate-rem(130);
+        margin: calculate-rem(50.5);
+        border-radius: calculate-rem(40);
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(30px);
+        box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .image{
+        width: calculate-rem(948);
+        height: calculate-rem(834);
+        margin: calculate-rem(50.5);
+    }
+}
+
+@media (max-width: 510px) {
+    .forms{
+        background: transparent !important;
+         backdrop-filter: blur(0)!important;
+        box-shadow: none !important;
+        margin: calculate-rem(20)!important;
+        height: calculate-rem(750)!important;
+
+    }
+}
