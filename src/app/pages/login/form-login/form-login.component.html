@@ -1,21 +1,21 @@
-<section class="login d-flex flex-column w-100 h-100">
-    <header class="login__topo mb-4">
+<main class="login d-flex flex-column w-100 h-100">
+    <header class="login__topo mb-3">
         <div class="login__logo">Your Logo</div>
         <h1 class="login__title">Login</h1>
     </header>
 
     <form class="login__form w-100">
-        <label for="email" class="d-block mb-2 login__label-email">Email</label>
+        <label for="email" class="d-block mb-1 login__label-email">Email</label>
         <input class=" border-0 login__email" id="email" type="email" placeholder="username@gmail.com">
 
-        <label for="password" class="d-block mb-2 mt-4 login__label-password">Password</label>
+        <label for="password" class="d-block mb-1 mt-4 login__label-password">Password</label>
         <div class="login__container bg-white d-flex ">
             <input class="login__password border-0 d-inline-block " id="password" type="password" placeholder="password">
             <i class="ml-3 d-flex">
                 <img class="login__view-password" src="../../../../assets/images/password_eye.svg" alt="imagem de olho para mostrar ou esconder senha">
             </i>
         </div>
-        <small class="d-block mt-4 login__forgot-password mb-5"> 
+        <small class="d-block mt-3 login__forgot-password mb-5"> 
             <a href="">Forgot password?</a> 
         </small>
 
@@ -37,4 +37,4 @@
 
         <small class="login__noAccount d-block">Don't have an account? yet? <a class="text-center" routerLink="subscribe">Register for free</a></small>
     </form>
-</section>
+</main>

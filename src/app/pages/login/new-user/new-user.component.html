@@ -1,2 +1,52 @@
-<h1>TEMPLATE DO NOVO USUARIO AQUI</h1>
+<main class="new-user d-flex flex-column w-100 h-100 p-3">
+    <section class="new-user__title">
+        <h2 class="new-user__text-title text-center">Register</h2>
+        <p class=" new-user__text-subtitle text-center mb-4">Register and access all content for free!</p>
+    </section>
 
+    <form class="new-user__form d-flex flex-column">
+        <label for="name" class="d-block mb-1 new-user__label-name">Nome </label>
+        <input class=" border-0 new-user__name" id="name" type="text" placeholder="Full name">
+
+        <label for="email" class="d-block mb-1 new-user__label-email">Email</label>
+        <input class=" border-0 new-user__email" id="email" type="email" placeholder="username@gmail.com">
+
+        <label for="date" class="d-block mb-1 new-user__label-date">Date of birth</label>
+        <input class=" w-50 border-0 new-user__date" id="date" type="date">
+
+        <div>
+            <p class="new-user__genres">Select your genre:</p>
+
+            <input type="radio" name="genre" id="male" value="male" checked>
+            <label class="new-user__male" for="male">Male</label>
+
+            <input type="radio" name="genre" id="female" value="female">
+            <label class="new-user__female" for="female">Female</label>
+        </div>
+
+
+        <label class="new-user__label-schooling d-block" for="schooling">Select your education level</label>
+        <select class="new-user__schooling d-block" id="schooling">
+            <option value="elementary School">elementary School</option>
+            <option value="middle school">middle school</option>
+            <option value="high school">high school</option>
+            <option value="Higher Education">Higher Education</option>
+        </select>
+
+        <label class="new-user__label-password d-block" for="password" >Password</label>
+        <input minlength="8" class=" new-user__password border-0" type="password" placeholder="min. 8 characters">
+
+        <label class=" new-user__label-password d-block" for="password" >Confirm password</label>
+        <input minlength="8" class="new-user__password border-0" type="password" placeholder="min. 8 characters">
+
+        <small class="new-user__hasAccount d-block">Do you have an account? <a class="text-center"
+                routerLink="">Sign</a></small>
+
+
+        <div class=" new-user__buttons d-flex justify-content-center align-content-center">
+            <button class="new-user__register btn">Register</button>
+            <button type="reset" class=" new-user__reset btn">Reset</button>
+        </div>
+
+    </form>
+</main>
