@@ -1,0 +1,164 @@
+@import "../../../../assets/styles/scss/mixins.scss";
+@import "../../../../assets/styles/scss/variables.scss";
+
+.login {
+  padding: calculate-rem(120);
+
+  &__logo {
+    font-family: "Gilroy";
+    font-size: calculate-rem(24);
+    font-weight: bold;
+    color: $secondary-color;
+    line-height: calculate-rem(29.2);
+  }
+
+  &__title {
+    font-size: calculate-rem(38);
+    line-height: calculate-rem(45.94);
+    font-weight: bold;
+  }
+
+  &__email {
+    padding: calculate-rem(17) calculate-rem(22);
+    border-radius: calculate-rem(5);
+    outline: none;
+    width: calculate-rem(400);
+  }
+
+  &__container {
+    width: calculate-rem(400);
+  }
+
+  &__password {
+    padding: calculate-rem(17) calculate-rem(22);
+    border-radius: calculate-rem(5);
+    width: 100%;
+    outline: none;
+  }
+
+  &__label-email,
+  &__label-password,
+  &__forgot-password,
+  &__continue,
+  &__noAccount {
+    font-size: calculate-rem(14);
+  }
+
+  &__forgot-password a,
+  &__noAccount a {
+    color: #000;
+  }
+
+  &__view-password {
+    cursor: pointer;
+    padding: 0 15px;
+  }
+
+  &__button {
+    background-color: $secondary-color;
+    color: white;
+    font-weight: bold;
+    width: calculate-rem(400);
+    height: calculate-rem(50);
+    font-size: calculate-rem(20);
+    margin-bottom: calculate-rem(45);
+  }
+
+  &__continue {
+    margin-bottom: calculate-rem(16);
+  }
+
+  &__social-media {
+    height: calculate-rem(50);
+    margin-bottom: calculate-rem(32);
+  }
+
+  &__account {
+    width: 30%;
+    height: 100%;
+    background: white;
+    border-radius: calculate-rem(40);
+  }
+
+  &__account img {
+    width: calculate-rem(24);
+  }
+
+  &__noAccount a {
+    font-weight: 600;
+    line-height: calculate-rem(17);
+    color: rgba(42, 30, 23, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  .login {
+    padding: 80px 50px;
+    align-items: center !important;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      margin-bottom: calculate-rem(40);
+    }
+
+    &__email {
+      padding: calculate-rem(15) calculate-rem(20);
+      width: 100%;
+    }
+
+    &__container {
+      width: 100%;
+    }
+
+    &__label-email,
+    &__label-password,
+    &__forgot-password,
+    &__continue,
+    &__noAccount {
+      font-size: calculate-rem(16);
+    }
+
+    &__password {
+      padding: calculate-rem(15) calculate-rem(20);
+      border-radius: calculate-rem(5);
+      outline: none;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+
+  .login {
+    padding: 30px 0 ;
+
+    &__noAccount {
+      font-size: calculate-rem(12);
+    }
+
+    &__social-media {
+      justify-content: space-around !important;
+    }
+
+
+    &__account {
+      width: 20%;
+    }
+
+    &__noAccount a{
+      font-weight: 600;
+      line-height: calculate-rem(17);
+      color: rgba(42, 30, 23, 1);
+      display:block;
+    }
+
+  }
+}

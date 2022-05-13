@@ -1,0 +1,4 @@
+@function calculate-rem($pixels) {
+    $value: $pixels / 16;
+    @return #{$value}rem;
+  }
