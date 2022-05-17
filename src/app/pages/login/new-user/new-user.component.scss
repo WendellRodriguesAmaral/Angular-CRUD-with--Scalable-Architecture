@@ -48,7 +48,7 @@
         background-color:white;
     }
 
-    &__hasAccount{
+    &__has-account{
         margin-top: calculate-rem(15);
         font-size: calculate-rem(16);
         margin-bottom:calculate-rem(30);
@@ -63,7 +63,6 @@
         color:white;
         font-weight: bold;
         outline: none;
-
     }
 
     &__register{
