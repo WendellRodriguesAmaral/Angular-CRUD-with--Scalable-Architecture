@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   {
     path: 'login', 
-    loadChildren: () => import('./pages/login/login.module')     // so carrega o modulo quando acesssar 'home'
+    loadChildren: () => import('./pages/login/login.module')     // so carrega o modulo quando acesssar 'login'
       .then(m => m.LoginModule)  // 'm' é o modulo recebido
   },
 ];
