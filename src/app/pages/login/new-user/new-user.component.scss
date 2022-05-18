@@ -1,0 +1,77 @@
+@import "../../../../assets/styles/scss/mixins.scss";
+@import "../../../../assets/styles/scss/variables.scss";
+
+.new-user{
+    &__text-title{
+        font-weight: bold;
+    }
+
+    &__text-subtitle{
+        font-weight: bold;
+        color:$secondary-color;
+    }
+
+    &__name,
+    &__email,
+    &__date,
+    &__schooling,
+    &__password{
+        padding: calculate-rem(10) calculate-rem(16);
+        outline: none;
+    }
+
+    &__label-name,
+    &__label-email,
+    &__label-date,
+    &__label-schooling,
+    &__label-password{
+        margin-top:calculate-rem(10);
+        margin-bottom:0!important;
+    }
+
+    &__genres{
+        margin-top:calculate-rem(10);
+        margin-bottom:calculate-rem(10);
+    }
+
+    &__male{
+        margin-right:calculate-rem(20) ;
+    }
+
+    &__male,
+    &__female{
+        margin-left: calculate-rem(5);
+    }
+
+    &__schooling{
+        border: none;
+        background-color:white;
+    }
+
+    &__has-account{
+        margin-top: calculate-rem(15);
+        font-size: calculate-rem(16);
+        margin-bottom:calculate-rem(30);
+    }
+
+    &__register,
+    &__reset{
+        height: calculate-rem(50);
+        width: calculate-rem(100);
+        border-radius: 5px;
+        margin: 0 calculate-rem(30);
+        color:white;
+        font-weight: bold;
+        outline: none;
+    }
+
+    &__register{
+        width: calculate-rem(150);
+        background-color:$secondary-color;
+    }
+
+    &__reset{
+        color:$secondary-color;
+        background-color:$primary-color;
+    }
+}
