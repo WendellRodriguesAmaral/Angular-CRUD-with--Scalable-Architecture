@@ -5,10 +5,10 @@
     </header>
     <form class="w-100 login__form">
         <label for="email" class="d-block mb-1 login__label-email">Email</label>
-        <input class="border-0 login__email" id="email" type="email" placeholder="username@gmail.com">
+        <input class="border-0 login__email" autocomplete="off" id="email" type="email" placeholder="username@gmail.com">
         <label for="password" class="d-block mb-1 mt-4 login__label-password">Password</label>
         <div class="bg-white d-flex login__container">
-            <input class="border-0 d-inline-block login__password " id="password" type="password" placeholder="password">
+            <input class="border-0 d-inline-block login__password " autocomplete="off" id="password" type="password" placeholder="password">
             <i class="ml-3 d-flex">
                 <img class="login__view-password" src="../../../../assets/images/password-eye.svg" alt="imagem de olho para mostrar ou esconder senha">
             </i>
@@ -29,6 +29,6 @@
                 <img src="../../../../assets/icons/icon_facebook.svg" alt="icone do facebook">
             </div>
         </div>
-        <small class="d-block login--no-account">Don't have an account? yet? <a class="text-center" routerLink="subscribe">Register for free</a></small>
+        <small class="d-block login--no-account">Don't have an account? yet? <a class="text-center" routerLink="/register">Register for free</a></small>
     </form>
 </main>
