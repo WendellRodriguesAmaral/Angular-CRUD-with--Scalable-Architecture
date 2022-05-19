@@ -6,8 +6,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { LoginComponent } from './login.component';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from 'src/app/shared/shared.module';
-import { CoreModule } from 'src/app/core/core.module';
+
 
 
 @NgModule({
@@ -19,9 +18,7 @@ import { CoreModule } from 'src/app/core/core.module';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    FormsModule,
-    SharedModule,
-    CoreModule
+    FormsModule  
   ]
 })
 export class LoginModule { }
