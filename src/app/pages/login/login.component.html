@@ -1,7 +1,9 @@
 
 <main class="login w-100 min-vh-100 d-flex justify-content-center align-items-center">
-    <section class="forms">
-        <router-outlet></router-outlet>
+    <section class="forms">        
+        <app-form-login *ngIf="this.route === 'login'"></app-form-login>
+
+        <app-novo-usuario *ngIf="this.route === 'register'" ></app-novo-usuario>       
     </section>
     <section class="d-none d-lg-block d-xl-block image">
         <img src="../../../assets/images/login-screen.svg" class="img-fluid" alt="magem de um passaro vestido de monge flutando ">

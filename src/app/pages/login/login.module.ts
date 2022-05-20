@@ -8,6 +8,7 @@ import { FormLoginComponent } from './form-login/form-login.component';
 import { FormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -17,7 +18,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    FormsModule
+    FormsModule  
   ]
 })
 export class LoginModule { }
