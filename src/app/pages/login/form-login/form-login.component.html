@@ -12,10 +12,10 @@
         
         <label for="password" class="d-block mb-1 mt-4 login__label-password">Password</label>
         <div class="bg-white d-flex login__container" [ngClass]="{'login__container--invalid': passwordField.invalid && passwordField.touched} ">
-            <input class="border-0 d-inline-block login__password " autocomplete="off" id="password" type="password"
+            <input class="border-0 d-inline-block login__password " autocomplete="off" id="password" [type]="passwordView"
                 placeholder="password" [(ngModel)]="password" name="password" required #passwordField="ngModel">
             <i class="ml-3 d-flex">
-                <img class="login__view-password" src="../../../../assets/images/password-eye.svg"
+                <img (click)="changePasswordView()" class="login__view-password" src="../../../../assets/images/password-eye.svg"
                     alt="imagem de olho para mostrar ou esconder senha">
             </i>
         </div>
