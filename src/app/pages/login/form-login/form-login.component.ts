@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormLoginComponent implements OnInit {
 
+  email: string='';
+  password: string='';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  login(){
+    console.log({email: this.email, password: this.password})
+    
+    //momentaneo
+    window.location.reload();  //recarrega a pagina
   }
 
 }
