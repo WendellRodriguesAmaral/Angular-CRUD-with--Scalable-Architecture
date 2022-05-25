@@ -10,7 +10,7 @@ export class FormLoginComponent implements OnInit {
   email: string='';
   password: string='';
 
-  passwordView='password';
+  passwordView:string ='password';
 
   constructor() { }
 
@@ -18,8 +18,9 @@ export class FormLoginComponent implements OnInit {
   }
 
   login():void{
-    console.log({email: this.email, password: this.password})
-    
+    //obj contendo email e login para envio
+    //{email: this.email, password: this.password})
+
     //momentaneo
     window.location.reload();  //recarrega a pagina
   }

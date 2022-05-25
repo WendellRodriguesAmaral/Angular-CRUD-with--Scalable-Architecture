@@ -18,6 +18,7 @@
     &__password{
         padding: calculate-rem(10) calculate-rem(16);
         outline: none;
+        border-radius: calculate-rem(5);
     }
 
     &__label-name,

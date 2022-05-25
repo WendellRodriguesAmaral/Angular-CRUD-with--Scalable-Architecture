@@ -32,18 +32,18 @@
 
   &__container {
     width: calculate-rem(400);
-    border-radius: calculate-rem(5)!important;
+    border-radius: calculate-rem(5);
   }
 
   &__container--invalid {
-    border: 1px solid red !important;
+    border: 1px solid red ;
   }
 
   &__password {
     padding: calculate-rem(17) calculate-rem(22);
     width: 100%;
     outline: none;
-    border-radius: calculate-rem(5)!important;
+    border-radius: calculate-rem(5);
   }
 
   &__label-email,

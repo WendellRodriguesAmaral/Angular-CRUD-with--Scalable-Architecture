@@ -8,7 +8,7 @@
         <input class="border-0 login__email" [ngClass]="{'login__email--invalid': emailField.invalid && emailField.touched} "  autocomplete="off" id="email" type="email" 
             placeholder="username@gmail.com" [(ngModel)]="email" name="email" required #emailField="ngModel">
 
-        <app-mensagem-validacao *ngIf="emailField.invalid && emailField.touched" message="Email is required"></app-mensagem-validacao>
+        <app-validation-message *ngIf="emailField.invalid && emailField.touched" message="Email is required"></app-validation-message>
         
         <label for="password" class="d-block mb-1 mt-4 login__label-password">Password</label>
         <div class="bg-white d-flex login__container" [ngClass]="{'login__container--invalid': passwordField.invalid && passwordField.touched} ">
@@ -20,7 +20,7 @@
             </i>
         </div>
 
-        <app-mensagem-validacao *ngIf="passwordField.invalid && passwordField.touched" message="Password is required"></app-mensagem-validacao>
+        <app-validation-message *ngIf="passwordField.invalid && passwordField.touched" message="Password is required"></app-validation-message>
 
         <small class="d-block mt-3 mb-5 login__forgot-password">
             <a href="">Forgot password?</a>

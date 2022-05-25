@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MensagemValidacaoComponent } from './mensagem-validacao.component';
+import { ValidationMEssageComponent } from './validation-message.component';
 
 describe('MensagemValidacaoComponent', () => {
-  let component: MensagemValidacaoComponent;
-  let fixture: ComponentFixture<MensagemValidacaoComponent>;
+  let component: ValidationMEssageComponent;
+  let fixture: ComponentFixture<ValidationMEssageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MensagemValidacaoComponent ]
+      declarations: [ ValidationMEssageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MensagemValidacaoComponent);
+    fixture = TestBed.createComponent(ValidationMEssageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

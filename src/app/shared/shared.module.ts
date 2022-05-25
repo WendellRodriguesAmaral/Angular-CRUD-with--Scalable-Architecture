@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MensagemValidacaoComponent } from './components/mensagem-validacao/mensagem-validacao.component';
+import {  ValidationMEssageComponent } from './components/validation-message/validation-message.component';
 
 
 
 @NgModule({
   declarations: [
-    MensagemValidacaoComponent
+    ValidationMEssageComponent
   ],
   imports: [
     CommonModule
   ],
-  exports: [MensagemValidacaoComponent]
+  exports: [ValidationMEssageComponent]
 })
 export class SharedModule { }
