@@ -1,0 +1,30 @@
+<main class="w-100 min-vh-100 vh-100 d-flex list">
+    <aside class="position-relative h-100 d-flex flex-column align-items-center list__menu">
+        <h1 class=" text-center list__menu__title">CRUD OPERATIONS</h1>
+        <div class="list__menu__image">
+            <img src="../../../../assets/images/photo-user.svg" alt="imagem de perfil">
+        </div>
+        <h2 class="list__menu__name">Karthi Madesh</h2>
+        <p class="mb-5 list__menu__role">Admin</p>
+
+        <div class="d-flex flex-column mt-4 w-50 list__menu__options">
+            <a routerLink="/in/home" class="pt-2 pb-2 d-flex pl-4 btn list__menu__option-home" routerLinkActive="active">
+                <img src="../../../../assets/icons/icon_home.svg" alt="imagem de uma casinha">
+                <p class="mb-0 ml-2">Home</p>
+            </a>
+            <a routerLink="/in/list" class=" pt-2 pb-2 d-flex pl-4  btn list__menu__option-list " routerLinkActive="active">
+                <img class="ml-1" src="../../../../assets/icons/icon_list.svg" alt="imagem de uma slider ">
+                <p class="mb-0 ml-2">List</p>
+            </a>
+        </div>
+
+        <a routerLink="/login" class="btn position-absolute list__menu__option-logout">
+            <p class="d-inline mr-3">Logout</p>
+            <img src="../../../../assets/icons/icon_logout.svg" alt="imagem de uma setinha saindo de um quadrado pequeno">
+        </a>
+    </aside>
+
+
+    <section class="h-100 list__content"><p>centro</p>
+    </section>
+</main>

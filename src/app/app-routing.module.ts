@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module')     // so carrega o modulo quando acesssar 'login'
       .then(m => m.LoginModule)  // 'm' é o modulo recebido
   },
+  {
+    path: 'in', 
+    loadChildren: () => import('./pages/profile/profile.module')     
+      .then(m => m.ProfileModule)  
+  },
 ];
 
 @NgModule({

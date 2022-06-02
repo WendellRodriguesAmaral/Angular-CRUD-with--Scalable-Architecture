@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-login',
@@ -12,7 +13,7 @@ export class FormLoginComponent implements OnInit {
 
   passwordView:string ='password';
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -22,7 +23,9 @@ export class FormLoginComponent implements OnInit {
     //{email: this.email, password: this.password})
 
     //momentaneo
-    window.location.reload();  //recarrega a pagina
+    // window.location.reload();  //recarrega a pagina
+
+    this.router.navigateByUrl('in/home')
   }
 
   changePasswordView():void {
